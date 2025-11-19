@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenomics - KST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="rain"></div> 
+    
+    <header class="main-header">
+        <div class="logo">KST</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tokenomics.html">Tokenomics</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tokenomics-content" class="hero-section" style="padding: 100px 5% 70px; min-height: 70vh;">
+        <h1 style="text-shadow: none;">KST Tokenomics</h1>
+        <p style="font-size: 1.1em; color: var(--color-secondary);">Total Supply, Distribution, and Utility of the KST Token.</p>
+        
+        <div class="features-section" style="justify-content: center; gap: 50px; margin-top: 50px;">
+            <div class="feature-card" style="width: 400px; text-align: left;">
+                <h3 style="color: var(--color-primary);">Total Supply: 1 Billion KST</h3>
+                <p>The supply is capped to ensure long-term value and scarcity in the decentralized ecosystem.</p>
+            </div>
+            <div class="feature-card" style="width: 400px; text-align: left;">
+                <h3 style="color: var(--color-accent);">Distribution Breakdown</h3>
+                <ul>
+                    <li>**60% Community Rewards:** For contributions and platform usage.</li>
+                    <li>**20% Foundation Reserve:** For future development and ecosystem growth.</li>
+                    <li>**10% Liquidity Pool:** For decentralized exchange listings.</li>
+                    <li>**10% Team & Advisors:** Vested over 4 years.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="main-footer">
+        <p>&copy; 2025 Knowledge Share Decentralized Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const rainContainer = document.querySelector('.rain');
+        const totalDrops = 100;
+
+        for (let i = 0; i < totalDrops; i++) {
+            const drop = document.createElement('span');
+            drop.style.left = `${Math.random() * 100}%`;
+            drop.style.animationDelay = `${Math.random() * 5}s`; 
+            drop.style.animationDuration = `${5 + Math.random() * 3}s`; 
+            rainContainer.appendChild(drop);
+        }
+    </script>
+</body>
+</html>
